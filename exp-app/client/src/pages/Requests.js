@@ -6,8 +6,9 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+import "../style.css"
 
-class Books extends Component {
+class Requests extends Component {
   state = {
     books: [],
     title: "",
@@ -65,10 +66,15 @@ class Books extends Component {
 
   render() {
     return (
-      <Container fluid>
+      <Container>
         <Row>
-          <Col size="md-6">
-            <form>
+          <Col size="md-12">
+            <h1>lalala</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col size="md-12">
+            <form id="form">
               <Input
                 value={this.state.title}
                 onChange={this.handleInputChange}
@@ -111,12 +117,6 @@ class Books extends Component {
                 name="photo"
                 placeholder="Author (required)"
               />
-              <TextArea
-                value={this.state.synopsis}
-                onChange={this.handleInputChange}
-                name="synopsis"
-                placeholder="Synopsis (Optional)"
-              />
               <FormBtn
                 disabled={!(this.state.author && this.state.title)}
                 onClick={this.handleFormSubmit}
@@ -131,4 +131,4 @@ class Books extends Component {
   }
 }
 
-export default Books;
+export default Requests;
