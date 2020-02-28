@@ -1,6 +1,5 @@
 .navbar-container {
     border: 2px solid purple;
-    /* height: 10vh; */
 }
 .navbar {
     background-color: black;
@@ -10,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     font-family: 'Rock Salt', cursive;
+    height: 15vh;
 }
 .collapse {
     /* border: 3px solid pink; */
@@ -23,7 +23,7 @@
 }
 #logo-image {
     border: 1px solid #B5302E;
-    width: 3em;
+    width: 2.5em;
 }
 #home-row {
     /* border: 2px solid blue; */
@@ -57,7 +57,22 @@
 .form-group {
     width: 80vw;
 }
+.form-group > h2 {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+}
 #form {
     border: 2px solid blue;
-    /* height: 90vh; */
+    height: 83.5vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.row {
+    border: 5px solid maroon;
+    height: 84.5vh;
+    background: black;
 }

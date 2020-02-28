@@ -28,7 +28,7 @@ class Requests extends Component {
   loadBooks = () => {
     API.getBooks()
       .then(res =>
-        this.setState({ books: res.data, title: "", author: "", synopsis: "" })
+        this.setState({ books: res.data, title: "", author: "", synopsis: "", name: "", email: "", selection: "", wish: "", photo: "" })
       )
       .catch(err => console.log(err));
   };
@@ -67,11 +67,6 @@ class Requests extends Component {
   render() {
     return (
       <Container>
-        <Row>
-          <Col size="md-12">
-            <h1>lalala</h1>
-          </Col>
-        </Row>
         <Row>
           <Col size="md-12">
             <form id="form">
