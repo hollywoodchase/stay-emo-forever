@@ -66,7 +66,7 @@ class Requests extends Component {
 
   render() {
     return (
-      <Container>
+      <Container fluid>
         <Row>
           <Col size="md-12">
             <form id="form">
