@@ -5,7 +5,7 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-import { Input, TextArea, Name, Email, Selection, Wish, FormBtn } from "../components/Form";
+import { Input, TextArea, Name, Email, Selection, Wish, Photo, FormBtn } from "../components/Form";
 import "../style.css"
 
 class Requests extends Component {
@@ -76,23 +76,23 @@ class Requests extends Component {
                 name="email"
                 placeholder="Author (required)"
               />
-              <Input
+              <Selection
                 value={this.state.selection}
                 onChange={this.handleInputChange}
                 name="selection"
-                placeholder="Author (required)"
+                placeholder=""
               />
-              <Input
+              <Wish
                 value={this.state.wish}
                 onChange={this.handleInputChange}
                 name="wish"
-                placeholder="Author (required)"
+                placeholder=""
               />
-              <Input
+              <Photo
                 value={this.state.photo}
                 onChange={this.handleInputChange}
                 name="photo"
-                placeholder="Author (required)"
+                placeholder="http://myspace.com/emod00d/profilePic"
               />
               <FormBtn
                 disabled={!(this.state.name && this.state.email && this.state.selection)}

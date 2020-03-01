@@ -88,7 +88,7 @@ export function Selection(props) {
 export function Wish(props) {
   return (
     <div class="form-group">
-      <h2>Which artist do you wish there were more songs for?</h2>
+      <h2>Which artist do you wish there were more songs for? - Optional</h2>
       <select class="form-control" id="selection" {...props}>
         <option></option>
         <option>Sugarcult</option>
@@ -119,7 +119,7 @@ export function Wish(props) {
 export function Photo(props) {
   return (
     <div className="form-group">
-      <h2>Background photo for your performance</h2>
+      <h2>Background photo for your performance (URL) - Optional</h2>
       <input className="form-control" {...props} />
     </div>
   );
