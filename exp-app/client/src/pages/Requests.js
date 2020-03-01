@@ -68,13 +68,13 @@ class Requests extends Component {
                 value={this.state.name}
                 onChange={this.handleInputChange}
                 name="name"
-                placeholder="Author (required)"
+                placeholder="Emo Joe"
               />
               <Email
                 value={this.state.email}
                 onChange={this.handleInputChange}
                 name="email"
-                placeholder="Author (required)"
+                placeholder="emoD00D@myspace.com"
               />
               <Selection
                 value={this.state.selection}
