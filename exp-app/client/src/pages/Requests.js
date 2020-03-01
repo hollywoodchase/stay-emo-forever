@@ -5,13 +5,12 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-import { Input, TextArea, FormBtn } from "../components/Form";
+import { Input, TextArea, Name, Email, Selection, Wish, FormBtn } from "../components/Form";
 import "../style.css"
 
 class Requests extends Component {
   state = {
     books: [],
-    title: "",
     author: "",
     synopsis: "",
     name: "",
@@ -28,7 +27,7 @@ class Requests extends Component {
   loadBooks = () => {
     API.getBooks()
       .then(res =>
-        this.setState({ books: res.data, title: "", author: "", synopsis: "", name: "", email: "", selection: "", wish: "", photo: "" })
+        this.setState({ books: res.data, author: "", synopsis: "", name: "", email: "", selection: "", wish: "", photo: "" })
       )
       .catch(err => console.log(err));
   };
@@ -48,9 +47,8 @@ class Requests extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    if (this.state.title && this.state.author) {
+    if (this.state.name && this.state.email) {
       API.saveBook({
-        title: this.state.title,
         author: this.state.author,
         synopsis: this.state.synopsis,
         name: this.state.name,
@@ -71,24 +69,18 @@ class Requests extends Component {
           <Col size="md-12">
             <form id="form">
               <Input
-                value={this.state.title}
-                onChange={this.handleInputChange}
-                name="title"
-                placeholder="Title (required)"
-              />
-              <Input
                 value={this.state.author}
                 onChange={this.handleInputChange}
                 name="author"
                 placeholder="Author (required)"
               />
-              <Input
+              <Name
                 value={this.state.name}
                 onChange={this.handleInputChange}
                 name="name"
                 placeholder="Author (required)"
               />
-              <Input
+              <Email
                 value={this.state.email}
                 onChange={this.handleInputChange}
                 name="email"
@@ -113,7 +105,7 @@ class Requests extends Component {
                 placeholder="Author (required)"
               />
               <FormBtn
-                disabled={!(this.state.author && this.state.title)}
+                disabled={!(this.state.name && this.state.email && this.state.selection)}
                 onClick={this.handleFormSubmit}
               >
                 Submit Book
