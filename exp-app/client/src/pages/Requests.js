@@ -11,8 +11,6 @@ import "../style.css"
 class Requests extends Component {
   state = {
     books: [],
-    author: "",
-    synopsis: "",
     name: "",
     email: "",
     selection: "",
@@ -27,7 +25,7 @@ class Requests extends Component {
   loadBooks = () => {
     API.getBooks()
       .then(res =>
-        this.setState({ books: res.data, author: "", synopsis: "", name: "", email: "", selection: "", wish: "", photo: "" })
+        this.setState({ books: res.data, name: "", email: "", selection: "", wish: "", photo: "" })
       )
       .catch(err => console.log(err));
   };
@@ -49,8 +47,6 @@ class Requests extends Component {
     event.preventDefault();
     if (this.state.name && this.state.email) {
       API.saveBook({
-        author: this.state.author,
-        synopsis: this.state.synopsis,
         name: this.state.name,
         email: this.state.email,
         selection: this.state.selection,
@@ -68,12 +64,6 @@ class Requests extends Component {
         <Row>
           <Col size="md-12">
             <form id="form">
-              <Input
-                value={this.state.author}
-                onChange={this.handleInputChange}
-                name="author"
-                placeholder="Author (required)"
-              />
               <Name
                 value={this.state.name}
                 onChange={this.handleInputChange}
