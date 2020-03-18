@@ -23,7 +23,7 @@
 }
 #logo-image {
     border: 1px solid #B5302E;
-    width: 2.5em;
+    width: 7em;
 }
 #home-row {
     /* border: 2px solid blue; */
@@ -35,7 +35,8 @@
     background: black;
 }
 .carousel-item {
-    height: 81vh;
+    height: 84.5vh;
+    background: black;
 }
 .carousel-img {
     width: 100%;
