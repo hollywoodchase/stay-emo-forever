@@ -17,7 +17,7 @@ function Nav() {
               <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/signup">Signup</a>
+              <a class="nav-link" href="/requests">Signup</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/calendar">Calendar</a>

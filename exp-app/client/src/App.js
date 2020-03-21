@@ -174,7 +174,7 @@
 
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Requests from "./pages/Requests";
+import Requests from "./components/Requests";
 // import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
@@ -189,9 +189,8 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          {/* <Route exact path="/" component={Home} /> */}
           <Route
-            path="/"
+            exact path="/"
             render={() =>
               <div className="signup">
                 <Carousel>
@@ -240,7 +239,13 @@ function App() {
                 </Carousel>
               </div>}
           ></Route>
-          {/* <Button>Hello</Button> */}
+          {/* <Route
+            path="/requests"
+            render={() =>
+              <div>
+                <h1>Hello</h1>
+              </div>}
+          ></Route> */}
           <Route exact path="/requests" component={Requests} />
           <Route exact path="/books/:id" component={Detail} />
           <Route component={NoMatch} />
