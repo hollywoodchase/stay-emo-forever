@@ -98,7 +98,7 @@ class Requests extends Component {
                 disabled={!(this.state.name && this.state.email && this.state.selection)}
                 onClick={this.handleFormSubmit}
               >
-                Submit Book
+                Submit Request
               </FormBtn>
             </form>
           </Col>
