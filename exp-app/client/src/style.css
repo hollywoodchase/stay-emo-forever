@@ -82,15 +82,11 @@
   /* border: 5px solid silver; */
 }
 .cal-div {
-  height: 83vh;
-  /* border: 5px solid gold; */
+  height: 85vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.react-calendar__month-view__days__day {
-    height: 5em;
-}
-.react-calendar__tile--active {
-    background: #006edc;
-    color: white;
-  }
 /* react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth */

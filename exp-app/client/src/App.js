@@ -239,14 +239,9 @@ function App() {
                 </Carousel>
               </div>}
           ></Route>
-          {/* <Route
-            path="/requests"
-            render={() =>
-              <div>
-                <h1>Hello</h1>
-              </div>}
-          ></Route> */}
-          <Route exact path="/requests" component={Requests} />
+          <Route exact path="/requests">
+            <Requests />
+          </Route>
           <Route exact path="/calendar" component={Dates} />
           <Route component={NoMatch} />
         </Switch>
