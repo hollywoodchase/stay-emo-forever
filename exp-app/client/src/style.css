@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   font-family: "Rock Salt", cursive;
-  height: 15vh;
+  height: 20vh;
 }
 .collapse {
   /* border: 3px solid pink; */
@@ -22,7 +22,7 @@
 }
 #logo-image {
   border: 1px solid #b5302e;
-  width: 6em;
+  width: 8em;
 }
 #home-row {
   /* border: 2px solid blue; */
@@ -34,7 +34,7 @@
   background: black;
 }
 .carousel-item {
-  height: 85vh;
+  height: 80vh;
   background: black;
 }
 .carousel-img {
@@ -44,7 +44,7 @@
   background-color: black;
   color: white;
   font-size: 30px;
-  height: 82vh;
+  height: 80vh;
   font-family: "Rock Salt", cursive;
   /* border: 2px solid yellow; */
   display: flex;
@@ -63,7 +63,7 @@
 }
 #form {
   /* border: 2px solid blue; */
-  height: 83.5vh;
+  height: 80vh;
   background: black;
   display: flex;
   flex-direction: column;
@@ -72,17 +72,11 @@
 }
 .row {
   /* border: 5px solid maroon; */
-  height: 85vh;
+  height: 80vh;
   background: black;
-}
-.react-calendar {
-  background: black;
-  width: 100vw;
-  height: 90vh;
-  /* border: 5px solid silver; */
 }
 .cal-div {
-  height: 85vh;
+  height: 80vh;
   background: black;
   display: flex;
   justify-content: center;
