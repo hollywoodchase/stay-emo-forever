@@ -88,5 +88,14 @@
   justify-content: center;
   align-items: center;
 }
-
-/* react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth */
+#nav-selection {
+  background: black;
+  color: gray;
+  font-size: 25px;
+  max-width: 8em;
+}
+#select-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
