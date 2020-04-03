@@ -175,7 +175,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Requests from "./components/Requests";
-// import Home from "./pages/Home";
+import Dates from "./components/Dates";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
@@ -247,7 +247,7 @@ function App() {
               </div>}
           ></Route> */}
           <Route exact path="/requests" component={Requests} />
-          <Route exact path="/books/:id" component={Detail} />
+          <Route exact path="/calendar" component={Dates} />
           <Route component={NoMatch} />
         </Switch>
       </div>
