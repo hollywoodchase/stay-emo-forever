@@ -5,12 +5,9 @@ function Nav(props) {
   return (
     <div className="navbar-container">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="#">
           <img id="logo-image" src="https://i.ibb.co/3CHm36J/emo-logo.jpg"></img>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
@@ -22,9 +19,9 @@ function Nav(props) {
             <li class="nav-item">
               <a class="nav-link" href="/calendar">Calendar</a>
             </li>
-            <li class="nav-item" id="select-list">
-              <a class="nav-link" id="select-link" href="#">
-              <select class="form-control" id="nav-selection" {...props}>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-selection" href="#" aria-haspopup="true" aria-expanded="false">
+              <select class="form-control" id="select-list" {...props}>
         <option>SONG LIST</option>
         <option>Sugarcult - Memory</option>
         <option>All American Rejects - Swing Swing</option>
@@ -76,7 +73,7 @@ function Nav(props) {
       </a>
             </li>
           </ul>
-        </div>
+        </div>   
       </nav>
     </div>
   );
